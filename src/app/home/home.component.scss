@@ -1,0 +1,13 @@
+.spacer{
+  flex: 1 1 auto;
+}
+
+.container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  &__select{
+    width: 60px;
+    margin-left: 5px;
+  }
+}

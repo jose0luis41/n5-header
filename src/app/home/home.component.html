@@ -1,0 +1,13 @@
+<mat-toolbar color="primary">
+  <span>N5 {{'title' | myTranslate }}</span>
+  <span class="spacer"></span>
+  <section class="container">
+    <mat-icon>language</mat-icon>
+    <mat-select [(ngModel)]="language.value" class="container__select" (selectionChange)="select($event)">
+      <mat-option *ngFor="let language of languages" [value]="language.value">
+        {{language.value}}
+      </mat-option>
+    </mat-select>
+  </section>
+
+</mat-toolbar>
